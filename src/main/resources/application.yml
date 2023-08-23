@@ -1,0 +1,8 @@
+
+spring:
+  r2dbc:
+    url: r2dbc:mariadb://localhost:3306/test
+    username: root
+    password: 
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
