@@ -15,17 +15,12 @@ public class EmployeeService {
     private EmployeeRepository employeeRepository;
 
     public Flux<EmployeeEntity> getEmployees() {
-return employeeRepository.findAll();
+        return employeeRepository.findAll();
     }
 
     public Mono<EmployeeEntity> saveEmployee(EmployeeEntity employeeEntityMono) {
-        System.out.println("service save");
    return employeeRepository.save(employeeEntityMono);
 
-    }
-
-    public List<EmployeeEntity> getEmployeesList() {
-        return employeeRepository.findAll().collectList().block();
     }
 
     public Mono<EmployeeEntity> getEmployeeById(Integer id) {
@@ -35,4 +30,6 @@ return employeeRepository.findAll();
     public Mono<Void> deleteEmployeeById(Integer id) {
         return employeeRepository.deleteById(id);
     }
+
+
 }

@@ -1,0 +1,4 @@
+CREATE TABLE emp(
+id INT AUTO_INCREMENT PRIMARY KEY,
+name nvarchar(255)
+);

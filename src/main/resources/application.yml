@@ -3,6 +3,11 @@ spring:
   r2dbc:
     url: r2dbc:mariadb://localhost:3306/test
     username: root
-    password: 
+    password:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
+  liquibase:
+    change-log: classpath:liquibase-master-changelog.yml
+    url: ${DB_JDBC_CONNECTION_URL:jdbc:mariadb://localhost:3306/test}
+    user: ${DB_USER_NAME:root}
+    password: ${DB_PASSWORD:}

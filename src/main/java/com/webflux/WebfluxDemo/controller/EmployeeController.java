@@ -1,3 +1,4 @@
+/*
 package com.webflux.WebfluxDemo.controller;
 
 import com.webflux.WebfluxDemo.entity.EmployeeEntity;
@@ -14,30 +15,26 @@ import java.util.List;
 public class EmployeeController {
 @Autowired
     private EmployeeService employeeService;
-    @GetMapping
-    public Flux<EmployeeEntity> getEmployees(){
-        return employeeService.getEmployees();
-    }
+//    @GetMapping
+//    public Flux<EmployeeEntity> getEmployees(){
+//        return employeeService.getEmployees();
+//    }
 
-    @GetMapping("/{id}")
-    public Mono<EmployeeEntity> getEmployeeById(@PathVariable Integer id){
-        return employeeService.getEmployeeById(id);
-    }
+//    @GetMapping("/{id}")
+//    public Mono<EmployeeEntity> getEmployeeById(@PathVariable Integer id){
+//        return employeeService.getEmployeeById(id);
+//    }
 
-    @GetMapping("/list")
-    public List<EmployeeEntity> getEmployeesList(){
-        return employeeService.getEmployeesList();
-    }
-
-    @PostMapping
-    public Mono<EmployeeEntity> saveEmployees(@RequestBody EmployeeEntity employeeEntity){
-        return  employeeService.saveEmployee(employeeEntity);
-
-    }
-
-    @DeleteMapping("/{id}")
-    public Mono<Void> deleteEmployeeById(@PathVariable Integer id){
-        return employeeService.deleteEmployeeById(id);
-    }
+//    @PostMapping
+//    public Mono<EmployeeEntity> saveEmployees(@RequestBody EmployeeEntity employeeEntity){
+//        return  employeeService.saveEmployee(employeeEntity);
+//
+//    }
+//
+//    @DeleteMapping("/{id}")
+//    public Mono<Void> deleteEmployeeById(@PathVariable Integer id){
+//        return employeeService.deleteEmployeeById(id);
+//    }
 
 }
+*/
